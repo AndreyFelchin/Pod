@@ -1,0 +1,276 @@
+@import url(https://fonts.googleapis.com/css?family=Chivo:300,regular,700);
+
+html,
+body {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: inherit;
+}
+
+body,
+h1,
+p {
+  /* background: red; */
+  /* height: 100%; */
+  margin: 0;
+}
+
+.wrapper {
+  font-family: "Chivo", sans-serif;
+  line-height: 28px;
+  font-weight: 300;
+  font-size: 18px;
+  margin: 0 auto;
+  max-width: 1440px;
+  /* height: 100%; */
+  background: #121725;
+  /* height: 100vh; */
+  /* display: flex;
+  justify-content: flex-start;
+  align-items: flex-start; */
+  padding: 102px 0px 130px 165px;
+}
+
+.section {
+  height: 640px;
+  background-image: url(../img/desktop/image-host.jpg);
+  background-repeat: no-repeat;
+  background-position: top 0 right 0;
+  position: relative;
+  padding-top: 131px;
+}
+
+.section > img {
+  position: absolute;
+  top: -28px;
+}
+
+.card {
+  max-width: 723px;
+  height: 509px;
+  color: #fff;
+  background: #121725;
+  padding-top: 88px;
+  padding-right: 58px;
+}
+
+.dots {
+  width: 232px;
+  height: 104px;
+  background-image: url(../img/desktop/bg-pattern-dots.svg);
+  position: absolute;
+  bottom: -57px;
+  right: 0;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-size: 52px;
+  line-height: 62px;
+  font-weight: 300;
+}
+
+span {
+  color: #54e6af;
+}
+
+.text {
+  max-width: 445px;
+  margin-top: 24px;
+  margin-bottom: 40px;
+  color: #c2cbe5;
+}
+
+form {
+  max-width: 427px;
+  position: relative;
+}
+
+input {
+  border-radius: 28px;
+  border: none;
+  padding: 0;
+  /* border: 1px solid rgba(206, 152, 152, 0.5); */
+  font-family: "Chivo", sans-serif;
+  color: #fff;
+  background: #2c344b;
+}
+
+input[type="email"]::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+input[type="email"] {
+  max-width: 427px;
+  height: 56px;
+  outline: none;
+  padding: 0px 199px 0px 32px;
+  display: flex;
+  align-items: center;
+}
+
+.input__btn {
+  width: 162px;
+  height: 46px;
+  background: #54e6af;
+  box-shadow: 0px 2px 4px rgba(84, 230, 175, 0.14);
+  border: none;
+  outline: none;
+  border-radius: 28px;
+  padding: 0;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 28px;
+  color: #121725;
+}
+
+.images {
+  max-width: 536px;
+  height: 29px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  opacity: 0.8;
+}
+/* 
+.spotify {
+}
+
+.ap {
+}
+
+.gp {
+}
+
+.pc {
+} */
+
+@media (max-width: 800px) {
+  .wrapper {
+    max-width: 768px;
+    height: 1024px;
+    padding: 0 0 0 39px;
+  }
+
+  .section {
+    height: 100%;
+    background-image: url(../img/tablet/image-host.jpg);
+    padding-top: 258px;
+  }
+
+  .section > img {
+    top: 50px;
+  }
+
+  .card {
+    max-width: 635px;
+    padding-top: 93px;
+    padding-right: 0;
+  }
+
+  h1 {
+    font-size: 48px;
+    line-height: 56px;
+  }
+
+  .dots {
+    bottom: 0;
+    left: 30px;
+  }
+}
+
+@media (max-width: 420px) {
+  .wrapper {
+    max-width: 375px;
+    height: 667px;
+    padding: 0;
+    background-image: url(../img/mobile/image-host.jpg);
+  }
+
+  .section {
+    padding-top: 0;
+    background-image: none;
+    background: rgba(18, 23, 37, 0.9);
+    padding-top: 175px;
+  }
+
+  .section > img {
+    top: 62px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .card {
+    background-color: transparent;
+    padding: 0;
+    text-align: center;
+  }
+
+  .text {
+    max-width: 327px;
+    margin: 0 auto 33px;
+    font-size: 15px;
+    line-height: 25px;
+  }
+
+  form {
+    width: 327px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 94px;
+  }
+
+  input[type="email"] {
+    width: 100%;
+    height: 46px;
+    padding-right: 0;
+    margin-bottom: 16px;
+  }
+
+  .input__btn {
+    width: 326px;
+    position: static;
+  }
+
+  .dots {
+    display: none;
+  }
+
+  h1 {
+    font-size: 26px;
+    line-height: 38px;
+    margin-bottom: 16px;
+  }
+
+  .spotify img {
+    width: 56px;
+  }
+
+  .ap img {
+    width: 45px;
+  }
+
+  .gp img {
+    width: 73px;
+  }
+
+  .pc img {
+    width: 77px;
+  }
+
+  .images {
+    margin: 0 30px 0 30px;
+  }
+
+  .images div {
+    display: flex;
+    align-items: center;
+  }
+}
